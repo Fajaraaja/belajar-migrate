@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\KhsController;
 use App\Http\Controllers\MahasiswaController;
 use Illuminate\Support\Facades\Route;
 
@@ -9,3 +10,4 @@ Route::get('/', function () {
 
 Route::get('/home', [MahasiswaController::class, 'index']);
 Route::get('/join', [MahasiswaController::class, 'join']);
+Route::get('/',[KhsController::class, 'index']);
